@@ -1,0 +1,219 @@
+<h2 class="bg-danger text-white text-center fw-bold py-2 fs-2 text-uppercase text-decoration-underline">College Component</h2>
+<div><h2 class="text-center text-primary fw-bolder   text-Uppercase">Welcome to The Kiran Academy</h2></div>
+<div style="padding-left: 820px;; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="fs-4 fw-light fst-italic  text-secondary">Let's Fly with Us</div>
+<hr>
+
+<h3 class="text-center text-danger fw-bolder">-: Our Branches :-</h3>
+<div class="text-center"><span class="text-primary fw-bold mx-4 fs-4">❑ Karvenagar</span><span class="text-primary fw-bold mx-4 fs-4">❑ Warge</span><span class="text-primary fw-bold mx-4 fs-4">❑ Deccan</span><span class="text-primary fw-bold mx-4 fs-4">❑ Chinchwad</span><span class="text-primary fw-bold mx-4 fs-4">❑ Nagpur</span><br><br></div><hr>
+<div class="text-danger bg-info fw-bold fs-5"><marquee direction="right">More Than 25000+ Student's Placed in Top Companies</marquee></div><br>
+<div class="text-danger bg-info fw-bold fs-5"><marquee direction="left">More Than 738+ 🤝 Tieups with Top MNC Companies</marquee></div><br>
+
+<div class="text-center">
+<button  class="btn btn-primary px-5 mx-4 fs-4 fw-bolder" (click)="domain1()">Want to be a Developer ?</button>
+<button  class="btn btn-primary px-5 mx-4 fs-4 fw-bolder" (click)="domain2()">Want to be a Tester ?</button>
+
+<div *ngIf="dom=='developer'">
+
+    <br><h3 class="text-center text-danger fw-bolder">-: Full Stack Developement Roadmap :-</h3>
+<h4 class="text-success fw-bold text-center text-decoration-underline">Click on Your Journey</h4><br>
+<div class="text-center">
+<button class=" fw-bold btn btn-primary px-4  fs-5 mx-4" (click)="java()">Full Stack Java</button>
+<button class=" fw-bold btn btn-warning px-4  fs-5 mx-4" (click)="python()">Full Stack Python</button>
+<button class=" fw-bold btn btn-info px-4  fs-5 mx-4" (click)="dotnet()">Full Stack DotNet</button>
+<button class=" fw-bold btn btn-primary px-4  fs-5 mx-4" (click)="mern()">MERN Stack</button>
+<button class=" fw-bold btn btn-danger px-4  fs-5 mx-4" (click)="mean()">MEAN Stack</button>
+</div><br><hr>
+
+<div class="bg-primary" *ngIf="course=='java'">
+    <br>
+    <h2 class="bg-white text-primary fw-bolder text-center py-1 text-uppercase">-: Welcome to the Full Stack Java Developer Road Map :-</h2>
+    <!-- <br> -->
+    <p class="text-white fw-bold text-center fs-4">Duration of the Course is 6 Months from the Start Date of the Batch.</p>
+    <p class="bg-white text-primary fw-bold text-center fs-4"> <marquee> -: The Course is Wrapped under 3 Modules :- </marquee></p>
+    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 1 :- Front End Technology</h4>
+    <div class="bg-white text-center py-4">
+     <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3"> Hyper Text Markup Language (HTML)</span></span>
+       <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3"> Cascading Style Sheet (CSS)</span></span>
+        <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3"> Javascript</span></span>
+        <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3"> Angular (Framework)</span></span>
+    </div>
+    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 2 :- Back End Technology</h4>
+    <div class="bg-white text-center py-4">
+     <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3 px-2"> Core Java</span></span>
+       <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3 px-2">Java 2 Platform, Enterprise Edition (J2EE)</span></span>
+        <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3 px-2">Spring (Framework)</span></span>
+        <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3 px-2"> Hibernate (Framework)</span></span>
+    </div>
+
+    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 3 :- Database Technology</h4>
+    <div class="bg-white text-center py-4">
+     <span class="mx-4"><span class="fw-bold fs-2 text-danger">☛</span><span class="fs-3 px-2"> MY Structured Query Language (Mysql)</span></span>    </div>
+
+     <span class="px-3 fw-bold text-white fs-4">Contact Details : +91 88888 88888</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+     <span class="px-3 fw-bold text-white fs-4">Mail Id : jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+     <span class="px-3 fw-bold text-white fs-4">Website : www.jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+     <span class="px-3 fw-bold text-white fs-4">join us on : twitter.com</span>
+     <hr>
+    </div>
+
+    <div class="bg-warning" *ngIf="course=='python'">
+        <br>
+        <h2 class="bg-white fw-bolder text-center py-1 text-uppercase">-: Welcome to the Full Stack Python Developer Road Map :-</h2>
+        <!-- <br> -->
+        <p class="text-white fw-bold text-center fs-4">Duration of the Course is 6 Months from the Start Date of the Batch.</p>
+        <p class="bg-white text-warning fw-bold text-center fs-4"> <marquee> -: The Course is Wrapped under 3 Modules :- </marquee></p>
+        <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 1 :- Front End Technology</h4>
+        <div class="bg-white text-center py-4"> 
+         <span class="mx-2"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3"> Hyper Text Markup Language (HTML)</span></span>
+           <span class="mx-2"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3"> Cascading Style Sheet (CSS)</span></span>
+            <span class="mx-2"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3"> Javascript</span></span>
+            <span class="mx-2"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3"> Angular (Framework)</span></span>
+        </div>
+        <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 2 :- Back End Technology</h4>
+        <div class="bg-white text-center py-4">
+         <span class="mx-4"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3 px-2">Python</span></span>
+           <span class="mx-4"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3 px-2">DJango (Framework)</span></span>
+            <span class="mx-4"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3 px-2">Flask (Framework)</span></span>
+            <span class="mx-4"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3 px-2">Pandas (Library)</span></span>
+        </div>
+    
+        <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 3 :- Database Technology</h4>
+        <div class="bg-white text-center py-4">
+         <span class="mx-4"><span class="fw-bold fs-2 text-primary">☘</span><span class="fs-3 px-2">SQLite</span></span>    </div>
+    
+         <span class="px-3 fw-bold fs-4">Contact Details : +91 88888 88888</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+         <span class="px-3 fw-bold fs-4">Mail Id : jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+         <span class="px-3 fw-bold fs-4">Website : www.jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+         <span class="px-3 fw-bold fs-4">join us on : twitter.com</span>
+         <hr>
+        </div>
+
+        <div class="bg-info" *ngIf="course=='dotnet'">
+            <br>
+            <h2 class="bg-white text-info fw-bolder text-center py-1 text-uppercase">-: Welcome to the Full Stack DOT Developer Road Map :-</h2>
+            <!-- <br> -->
+            <p class="text-white fw-bold text-center fs-4">Duration of the Course is 6 Months from the Start Date of the Batch.</p>
+            <p class="bg-white text-info fw-bold text-center fs-4"> <marquee> -: The Course is Wrapped under 3 Modules :- </marquee></p>
+            <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 1 :- Front End Technology</h4>
+            <div class="bg-white text-center py-4"> 
+             <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3"> Hyper Text Markup Language (HTML)</span></span>
+               <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3"> Cascading Style Sheet (CSS)</span></span>
+                <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3"> Javascript</span></span>
+                <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3"> React JS (Library)</span></span>
+            </div>
+            <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 2 :- Back End Technology</h4>
+            <div class="bg-white text-center py-4">
+             <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3 px-2">ASP.NET</span></span>
+               <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3 px-2">ASP.NET Core</span></span>
+                <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3 px-2">ASP.NET MVC</span></span>
+                <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3 px-2">Active Server Pages</span></span>
+            </div>
+        
+            <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 3 :- Database Technology</h4>
+            <div class="bg-white text-center py-4">
+             <span class="mx-4"><span class="fw-bold fs-2 text-primary">✠</span><span class="fs-3 px-2">Databse .NET</span></span>    </div>
+        
+             <span class="px-3 fw-bold fs-4">Contact Details : +91 88888 88888</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+             <span class="px-3 fw-bold fs-4">Mail Id : jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+             <span class="px-3 fw-bold fs-4">Website : www.jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+             <span class="px-3 fw-bold fs-4">join us on : twitter.com</span>
+             <hr>
+            </div>
+
+            <div class="bg-primary" *ngIf="course=='mern'">
+                <br>
+                <h2 class="bg-white text-primary fw-bolder text-center py-1 text-uppercase">-: Welcome to the Mern Stack Developer Road Map :-</h2>
+                <!-- <br> -->
+                <p class="text-white fw-bold text-center fs-4">Duration of the Course is 4 Months from the Start Date of the Batch.</p>
+                <p class="bg-white text-primary fw-bold text-center fs-4"> <marquee> -: The Course is Wrapped under 3 Modules :- </marquee></p>
+                <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 1 :- Front End Technology</h4>
+                <div class="bg-white text-center py-4">
+                 <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="px-2 fs-3">Hyper Text Markup Language (HTML)</span></span>
+                 <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3"> Cascading Style Sheet (CSS)</span></span>
+                    <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3"> Javascript</span></span>
+                    <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3"> React JS (Library)</span></span>
+                </div>
+                <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 2 :- Back End Technology</h4>
+                <div class="bg-white text-center py-4">
+                 <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3 px-2"> Express JS (Framework)</span></span>
+                    <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3 px-2">Node JS (Framework)</span></span>
+                    <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3 px-2"> Vite (Library)</span></span>
+                </div>
+            
+                <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 3 :- Database Technology</h4>
+                <div class="bg-white text-center py-4">
+                 <span class="mx-4"><span class="fw-bold fs-2 text-primary">❖</span><span class="fs-3 px-2"> MongoDB (NoSQL)</span></span>    </div>
+            
+                 <span class="px-3 fw-bold text-white fs-4">Contact Details : +91 88888 88888</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                 <span class="px-3 fw-bold text-white fs-4">Mail Id : jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                 <span class="px-3 fw-bold text-white fs-4">Website : www.jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                 <span class="px-3 fw-bold text-white fs-4">join us on : twitter.com</span>
+                 <hr>
+                </div>
+
+                <div class="bg-danger" *ngIf="course=='mean'">
+                    <br>
+                    <h2 class="bg-white text-danger fw-bolder text-center py-1 text-uppercase">-: Welcome to the Mean Stack Developer Road Map :-</h2>
+                    <!-- <br> -->
+                    <p class="text-white fw-bold text-center fs-4">Duration of the Course is 4 Months from the Start Date of the Batch.</p>
+                    <p class="bg-white text-danger fw-bold text-center fs-4"> <marquee> -: The Course is Wrapped under 3 Modules :- </marquee></p>
+                    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 1 :- Front End Technology</h4>
+                    <div class="bg-white text-center py-4">
+                     <span class="mx-3"><span class="fw-bold fs-2 text-danger">➲</span><span class="px-2 fs-3">Hyper Text Markup Language (HTML)</span></span>
+                     <span class="mx-3"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3"> Cascading Style Sheet (CSS)</span></span>
+                        <span class="mx-3"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3"> Javascript</span></span>
+                        <span class="mx-3"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3"> Angular (Framework)</span></span>
+                    </div>
+                    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 2 :- Back End Technology</h4>
+                    <div class="bg-white text-center py-4">
+                     <span class="mx-4"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3 px-2"> Express JS (Framework)</span></span>
+                        <span class="mx-4"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3 px-2">Node JS (Framework)</span></span>
+                        <span class="mx-4"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3 px-2"> Vite (Library)</span></span>
+                    </div>
+                
+                    <h4 class="text-center fs-3 fw-bold text-white" style="padding-bottom: 10px;">Module 3 :- Database Technology</h4>
+                    <div class="bg-white text-center py-4">
+                     <span class="mx-4"><span class="fw-bold fs-2 text-danger">➲</span><span class="fs-3 px-2"> MongoDB (NoSQL)</span></span>    </div>
+                
+                     <span class="px-3 fw-bold text-white fs-4">Contact Details : +91 88888 88888</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                     <span class="px-3 fw-bold text-white fs-4">Mail Id : jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                     <span class="px-3 fw-bold text-white fs-4">Website : www.jbk@gmail.com</span> <span class="px-3 fw-bold text-white fs-4">|</span>
+                     <span class="px-3 fw-bold text-white fs-4">join us on : twitter.com</span>
+                     <hr>
+                    </div>
+
+
+</div>
+<div *ngIf="dom=='tester'">
+
+    <br><h3 class="text-center text-danger fw-bolder">-: Software Testing Roadmap :-</h3>
+<h4 class="text-success fw-bold text-center text-decoration-underline">Place where your Search for Quality End's</h4><br>
+<div class="text-center">
+<button class=" fw-bold btn btn-success px-4  fs-5 mx-4" (click)="manual()">Manual Testing</button>
+<button class=" fw-bold btn btn-danger px-4  fs-5 mx-4" (click)="automation()">Automation Testing</button>
+<button class=" fw-bold btn btn-primary px-4  fs-5 mx-4" (click)="ai()">Aritificial Intelligence (Ai) Testind</button>
+</div><br><hr>  
+
+<div class="bg-success" *ngIf="course=='manual'">
+    <br>
+    <h2 class="bg-white text-success fw-bolder text-center py-1 text-uppercase">-: Welcome to the Manual Testing :-</h2>
+    <p class="text-white fw-bold fs-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Manual testing involves manually reviewing and testing a software application, simulating the behavior of a real user, to identify errors, bugs, and other issues without using automated tools.</p>
+</div>
+
+<div class="bg-danger" *ngIf="course=='automation'">
+    <br>
+    <h2 class="bg-white text-danger fw-bolder text-center py-1 text-uppercase">-: Welcome to the Automation Testing :-</h2>
+    <p class="text-white fw-bold fs-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Automated testing is the application of software tools to automate a human-driven manual process of reviewing and validating a software product. Most modern agile and DevOps software projects now include automated testing from inception.</p>
+</div>
+
+<div class="bg-primary" *ngIf="course=='ai'">
+    <br>
+    <h2 class="bg-white text-primary fw-bolder text-center py-1 text-uppercase">-: Welcome to the Aritificial Intelligence (AI) Testing :-</h2>
+    <p class="text-white fw-bold fs-4" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">AI testing is a type of software testing that uses artificial intelligence to enhance and streamline the testing process. The objective of AI testing is to evaluate a software’s capabilities, efficiency, and reliability by automating tasks such as test execution, data validation, and error identification. .</p>
+</div>
+
+</div>
+</div>
+
+                    
+            

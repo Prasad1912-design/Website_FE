@@ -1,0 +1,82 @@
+<h2 class="bg-danger text-white text-center fw-bolder py-2 fs-2">-: School Component :-</h2>
+<h3 class="bg-primary text-white fw-bolder fs-2"><marquee> -: Result Checking Portal...!!!  All The Best...!!! :-</marquee></h3>
+<div class="text-center fw-bold fs-4">Enter the Student Name : <input type="text" #id1> </div><br>
+<div class="text-center"><button class="btn btn-primary px-5 fs-5 text-uppercase fw-bolder" (click)="fun(id1.value)">Enter</button></div><br><hr>
+<div *ngIf="name=='harish'">
+    <table border="2px solid" class="m-auto">
+        <tr>
+            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Id</th>
+            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Subject</th>
+            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Marks</th>
+        </tr>
+
+        <tr *ngFor="let i of h">
+            <td class="text-center text-danger fw-bold">{{i.id}}</td>
+            <td class="text-center text-danger fw-bold">{{i.subject}}</td>
+            <td class="text-center text-danger fw-bold">{{i.marks}}</td>
+        </tr>
+    </table></div>
+
+    <div *ngIf="name=='sukesh'">
+        <table border="2px solid" class="m-auto">
+            <tr>
+                <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Id</th>
+                <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Subject</th>
+                <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Marks</th>
+            </tr>
+    
+            <tr *ngFor="let i of s">
+                <td class="text-center text-danger fw-bold">{{i.id}}</td>
+                <td class="text-center text-danger fw-bold">{{i.subject}}</td>
+                <td class="text-center text-danger fw-bold">{{i.marks}}</td>
+            </tr>
+        </table></div>
+
+        <div *ngIf="name=='ganesh'">
+            <table border="2px solid" class="m-auto">
+                <tr>
+                    <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Id</th>
+                    <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Subject</th>
+                    <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Marks</th>
+                </tr>
+        
+                <tr *ngFor="let i of g">
+                    <td class="text-center text-danger fw-bold">{{i.id}}</td>
+                    <td class="text-center text-danger fw-bold">{{i.subject}}</td>
+                    <td class="text-center text-danger fw-bold">{{i.marks}}</td>
+                </tr>
+            </table></div>
+            
+            <div *ngIf="name=='shweta'">
+                <table border="2px solid" class="m-auto">
+                    <tr>
+                        <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Id</th>
+                        <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Subject</th>
+                        <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Marks</th>
+                    </tr>
+            
+                    <tr *ngFor="let i of sw">
+                        <td class="text-center text-danger fw-bold">{{i.id}}</td>
+                        <td class="text-center text-danger fw-bold">{{i.subject}}</td>
+                        <td class="text-center text-danger fw-bold">{{i.marks}}</td>
+                    </tr>
+                </table></div>
+
+                <div *ngIf="name=='anju'">
+                    <table border="2px solid" class="m-auto">
+                        <tr>
+                            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Id</th>
+                            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Subject</th>
+                            <th class="bg-danger py-2 text-white px-5 fs-5 text-uppercase">Marks</th>
+                        </tr>
+                
+                        <tr *ngFor="let i of a">
+                            <td class="text-center text-danger fw-bold">{{i.id}}</td>
+                            <td class="text-center text-danger fw-bold">{{i.subject}}</td>
+                            <td class="text-center text-danger fw-bold">{{i.marks}}</td>
+                        </tr>
+                    </table></div>
+                    <div *ngIf="name!='anju' && name!='shweta' && name!='ganesh' && name!='sukesh' && name!='harish'">
+                        <h2 class="text-center text-danger fw-bolder">No Data Found for your Request.</h2>
+                        <h3 class="text-success text-center fw-bold">Please try with Correct Name Again...!!!</h3>
+                        </div>
